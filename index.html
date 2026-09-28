@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Victoria Floral Design | GTA Luxury Florist</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Inter','Noto Sans TC','Noto Sans KR',system-ui,sans-serif;color:#292524}
+html{scroll-behavior:smooth}
+section{scroll-margin-top:4rem}
+.ripple{position:relative;overflow:hidden}
+.ripple span.r{position:absolute;border-radius:50%;background:rgba(255,255,255,.55);transform:scale(0);animation:rp .65s ease-out;pointer-events:none}
+@keyframes rp{to{transform:scale(4);opacity:0}}
+.marquee{display:flex;width:max-content;animation:mq 45s linear infinite}
+.marquee:hover{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+.lang.on{background:#be185d;color:#fff}
+.card:hover img,.card:hover .ic{transform:scale(1.08)}
+.card img,.card .ic{transition:transform .5s}
+</style>
+</head>
+<body class="bg-[#fcfbf9] antialiased">
+
+<!-- Header -->
+<header class="fixed top-0 inset-x-0 z-40 bg-white/90 backdrop-blur shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between gap-3">
+    <a href="#home" class="flex items-center gap-2 font-extrabold text-stone-800">
+      <span class="text-2xl">🌸</span>
+      <span class="text-sm sm:text-lg leading-tight tracking-wide">Victoria Floral Design</span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-stone-600">
+      <a href="#about" data-i18n="nav_about" class="hover:text-pink-700"></a>
+      <a href="#services" data-i18n="nav_services" class="hover:text-pink-700"></a>
+      <a href="#reviews" data-i18n="nav_reviews" class="hover:text-pink-700"></a>
+      <a href="#contact" data-i18n="nav_contact" class="hover:text-pink-700"></a>
+      <a href="#contact" data-i18n="cta_quote" class="bg-rose-700 hover:bg-rose-800 text-white px-5 py-2 rounded-full shadow transition"></a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <div class="flex rounded-full border border-stone-200 overflow-hidden text-xs font-semibold bg-white">
+        <button class="lang px-2 py-1.5" data-l="zh">繁中</button>
+        <button class="lang px-2 py-1.5" data-l="en">EN</button>
+        <button class="lang px-2 py-1.5" data-l="fr">FR</button>
+        <button class="lang px-2 py-1.5" data-l="ko">한국어</button>
+      </div>
+      <button id="burger" aria-label="Menu" class="lg:hidden p-2 text-stone-700"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+  <div id="mnav" class="hidden lg:hidden bg-white border-t px-4 py-3 flex-col gap-3 text-stone-700 font-medium">
+    <a href="#about" data-i18n="nav_about"></a>
+    <a href="#services" data-i18n="nav_services"></a>
+    <a href="#reviews" data-i18n="nav_reviews"></a>
+    <a href="#contact" data-i18n="nav_contact"></a>
+    <a href="#contact" data-i18n="cta_quote" class="bg-rose-700 text-white text-center py-2.5 rounded-full"></a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section id="home" class="relative min-h-screen flex items-center pt-16 text-white overflow-hidden bg-gradient-to-br from-stone-900 via-rose-950 to-stone-900">
+  <img src="images/image 7.jpg" alt="Luxury Floral Design" class="absolute inset-0 w-full h-full object-cover opacity-35" onerror="this.remove()">
+  <div class="absolute inset-0 bg-gradient-to-r from-stone-950/90 via-stone-950/50 to-transparent"></div>
+  <div class="relative max-w-7xl mx-auto px-4 py-20">
+    <span class="inline-block bg-rose-500/20 text-rose-200 border border-rose-300/30 px-4 py-1 rounded-full text-sm mb-6" data-i18n="hero_badge"></span>
+    <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight max-w-3xl" data-i18n="hero_h1"></h1>
+    <p class="mt-6 text-lg sm:text-xl text-stone-200 max-w-2xl" data-i18n="hero_sub"></p>
+    <p class="mt-4 text-rose-300 font-semibold text-lg" data-i18n="hero_tag"></p>
+    <div class="mt-10 flex flex-wrap gap-4">
+      <button id="heroBtn" class="ripple bg-rose-600 hover:bg-rose-500 text-white font-semibold px-8 py-4 rounded-full shadow-xl transition" data-i18n="cta_free"></button>
+      <a href="tel:+16472298965" class="border border-white/50 hover:bg-white/10 px-8 py-4 rounded-full font-semibold transition">📞 <span data-i18n="call_now"></span> 647-229-8965</a>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+    <div class="relative h-80 md:h-[26rem] rounded-3xl overflow-hidden shadow-xl bg-gradient-to-br from-rose-200 to-stone-200 flex items-center justify-center text-8xl">
+      💐
+      <img src="images/image 6.png" alt="Victoria Professional Florist" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
+      <div class="absolute bottom-4 left-4 bg-white/95 backdrop-blur rounded-2xl px-5 py-3 shadow-lg"><div class="text-3xl font-extrabold text-rose-700">10+</div><div class="text-xs text-stone-500" data-i18n="years"></div></div>
+    </div>
+    <div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-800" data-i18n="about_title"></h2>
+      <div class="w-16 h-1 bg-rose-400 mt-3 mb-6"></div>
+      <p class="text-stone-600 leading-relaxed text-justify" data-i18n="about_p1"></p>
+      <p class="mt-4 text-stone-600 leading-relaxed text-justify" data-i18n="about_p2"></p>
+      <div class="mt-4 inline-block bg-rose-50 text-rose-800 font-semibold px-4 py-2 rounded-xl border border-rose-100" data-i18n="about_lang"></div>
+      <ul class="mt-6 grid grid-cols-2 gap-3 text-sm font-medium">
+        <li class="bg-[#fcfbf9] rounded-xl p-3 shadow-sm border border-stone-100">🌿 <span data-i18n="f1"></span></li>
+        <li class="bg-[#fcfbf9] rounded-xl p-3 shadow-sm border border-stone-100">🎓 <span data-i18n="f2"></span></li>
+        <li class="bg-[#fcfbf9] rounded-xl p-3 shadow-sm border border-stone-100">✨ <span data-i18n="f3"></span></li>
+        <li class="bg-[#fcfbf9] rounded-xl p-3 shadow-sm border border-stone-100">🏡 <span data-i18n="f4"></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-20 bg-[#fcfbf9]">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center max-w-2xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-800" data-i18n="svc_title"></h2>
+      <div class="w-16 h-1 bg-rose-400 mx-auto mt-3 mb-4"></div>
+      <p class="text-stone-600" data-i18n="svc_sub"></p>
+    </div>
+    <div id="svcGrid" class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-7"></div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section id="reviews" class="py-20 bg-stone-900 text-white overflow-hidden">
+  <div class="text-center px-4 mb-10">
+    <h2 class="text-3xl sm:text-4xl font-extrabold" data-i18n="rev_title"></h2>
+    <div class="text-amber-400 text-2xl mt-3 tracking-widest">★★★★★</div>
+  </div>
+  <div class="marquee gap-6 px-3" id="revTrack"></div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-10">
+    <div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-800" data-i18n="ct_title"></h2>
+      <div class="w-16 h-1 bg-rose-400 mt-3 mb-6"></div>
+      <p class="text-stone-600 mb-8" data-i18n="ct_sub"></p>
+      <div class="space-y-4">
+        <div class="flex items-center gap-4 bg-[#fcfbf9] rounded-2xl p-4 shadow-sm border border-stone-100"><span class="text-2xl">👩‍🎨</span><div><div class="text-xs text-stone-500" data-i18n="lbl_contact"></div><div class="font-semibold">Victoria</div></div></div>
+        <a href="tel:+16472298965" class="flex items-center gap-4 bg-rose-700 hover:bg-rose-800 text-white rounded-2xl p-4 shadow-md transition"><span class="text-2xl">📞</span><div><div class="text-xs text-rose-100" data-i18n="lbl_phone"></div><div class="font-bold text-lg"><span data-i18n="call_now"></span> 647-229-8965</div></div></a>
+        <div class="flex items-center gap-4 bg-[#fcfbf9] rounded-2xl p-4 shadow-sm border border-stone-100"><span class="text-2xl">📍</span><div><div class="text-xs text-stone-500" data-i18n="lbl_area"></div><div class="font-semibold" data-i18n="area"></div></div></div>
+      </div>
+    </div>
+    <!-- contact panel -->
+    <div class="bg-[#fcfbf9] border border-stone-100 rounded-3xl shadow-xl p-6 sm:p-8 flex flex-col justify-center gap-4 text-center">
+      <h3 class="text-xl font-bold text-stone-800" data-i18n="panel_title"></h3>
+      <p class="text-stone-600 text-sm" data-i18n="panel_sub"></p>
+      <a href="tel:+16472298965" class="ripple bg-rose-700 hover:bg-rose-800 text-white font-semibold py-4 rounded-xl transition">📞 <span data-i18n="call_now"></span> 647-229-8965</a>
+      <a href="sms:+16472298965" class="ripple bg-[#007AFF] hover:opacity-90 text-white font-semibold py-4 rounded-xl transition">💬 <span data-i18n="msg_iphone">Messages</span></a>
+      <a href="https://wa.me/16472298965" target="_blank" rel="noopener noreferrer" class="ripple bg-[#25D366] hover:opacity-90 text-white font-semibold py-4 rounded-xl transition flex items-center justify-center gap-2">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-stone-950 text-stone-400 text-center text-sm py-6 px-4">
+  © 2014 Victoria Floral Design · <span data-i18n="footer"></span>
+</footer>
+
+<!-- Floating bubbles -->
+<div class="fixed bottom-5 right-5 z-50 flex flex-col gap-3">
+  <a href="https://www.instagram.com/zecart.floral/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-14 h-14 rounded-full bg-gradient-to-tr from-amber-500 via-rose-600 to-purple-700 shadow-lg hover:scale-110 transition flex items-center justify-center text-white">
+    <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+  </a>
+  <a href="https://wa.me/16472298965" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-14 h-14 rounded-full bg-[#25D366] shadow-lg hover:scale-110 transition flex items-center justify-center text-white">
+    <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+  <a href="sms:+16472298965" aria-label="Messages" class="w-14 h-14 rounded-full bg-[#007AFF] shadow-lg hover:scale-110 transition flex items-center justify-center text-white">
+    <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+  </a>
+</div>
+
+<script>
+const T={
+en:{call_now:"Call",msg_iphone:"Messages",panel_title:"Talk to Victoria Directly",panel_sub:"Tap a button to call or message Victoria for a custom floral consultation.",nav_about:"About Us",nav_services:"Services",nav_reviews:"Client Reviews",nav_contact:"Contact Us",cta_quote:"Book Consultation",
+hero_badge:"10+ Years Experience · DFA Certified Floral Designer",hero_h1:"Exquisite Floral Artistry Tailored for Your Moments",
+hero_sub:"Over 10 years of passion serving the GTA with luxury wedding décor, high-end custom orders & corporate openings, and professional floral classes.",
+hero_tag:"Your vision, brought to life in bloom.",cta_free:"Request Custom Design",years:"Years of Artistry",
+about_title:"Meet Victoria",about_p1:"With over a decade of dedicated floral expertise and prestigious DFA (Designer Florist Association) certification, Victoria creates breathtaking floral installations that transform spaces into emotional experiences.",
+about_p2:"Specializing in bespoke luxury arrangements, high-profile weddings, corporate grand openings, and intimate masterclasses, every stem is curated with absolute elegance and refined technique.",
+about_lang:"Fluent in English, Mandarin, Cantonese & Korean",f1:"DFA Certified",f2:"Luxury Custom Design",f3:"Bespoke Weddings",f4:"Professional Classes",
+svc_title:"Our Floral Services",svc_sub:"From grand wedding celebrations to professional floral classes, every creation is uniquely styled.",
+s1:"Luxury Wedding Decorations",s2:"High-End Custom & Corporate Orders",s3:"Professional Floral Design Workshops",
+d1:"Full-service wedding floristry including bridal bouquets, ceremony arches, and stunning reception centerpieces tailored to your dream theme.",
+d2:"Bespoke floral arrangements for high-end clients, VIP gifting, grand business openings, and corporate floral subscriptions.",
+d3:"Hands-on professional floral design masterclasses and hobby workshops led personally by a DFA certified expert.",
+rev_title:"What Our Clients Say",
+r1:"Victoria's wedding florals left everyone breathless. The arches and bouquets were absolute perfection!",r2:"Ordered a custom high-end arrangement for a corporate event—stunning design and lasted for weeks.",r3:"Taking Victoria's floral class was inspiring! She explains techniques so clearly and gracefully.",r4:"She decorated our boutique's grand opening with incredible elegance. Highly recommended!",r5:"True artistic mastery. Ten years of experience really shows in every single detail.",
+ct_title:"Contact Victoria",ct_sub:"Share your floral vision or book a consultation for your upcoming event.",lbl_contact:"Designer",lbl_phone:"Phone",lbl_area:"Service Area",area:"Greater Toronto Area (GTA) & surrounding regions",
+form_title:"Request a Floral Consultation",f_name:"Your Name",f_phone:"Phone Number",f_service:"Service Required",f_msg:"Message",f_submit:"Send Request",f_ok:"Thank you! Victoria will contact you shortly.",
+footer:"Serving the GTA with luxury floral design"},
+zh:{call_now:"撥打",msg_iphone:"傳送訊息 (Messages)",panel_title:"直接聯絡 Victoria",panel_sub:"點擊按鈕即可致電或傳訊息給 Victoria，預約專屬花藝諮詢。",nav_about:"關於 Victoria",nav_services:"花藝服務",nav_reviews:"客戶評價",nav_contact:"聯絡我們",cta_quote:"預約諮詢",
+hero_badge:"10年以上經驗 · DFA 認證花藝設計師",hero_h1:"為您的重要時刻打造精緻高雅的花藝藝術",
+hero_sub:"擁有逾10年花藝熱情，為大多倫多地區(GTA)提供奢華婚禮佈置、高端客製訂單與商業開幕，以及專業花藝教學。",
+hero_tag:"您的美學願景，我們以花卉完美演繹。",cta_free:"預約客製設計",years:"年花藝資歷",
+about_title:"關於 Victoria",about_p1:"Victoria 擁有超過十年的專業花藝資歷及權威 DFA（Designer Florist Association）認證，擅長將空間化為動人的美學體驗。",
+about_p2:"專精於高訂奢華花禮、高端婚禮花藝、企業開幕佈置以及專業花藝小班教學，每一朵花都經過精挑細選與精緻手藝雕琢。",
+about_lang:"精通英語、國語、粵語與韓語溝通",f1:"DFA 國際認證",f2:"高端客製花藝",f3:"奢華婚禮佈置",f4:"專業花藝教學",
+svc_title:"我們的花藝服務",svc_sub:"從盛大的婚禮盛宴到專業的花藝課程，每一件作品皆獨一無二。",
+s1:"奢華婚禮佈置",s2:"高端客製與企業開幕花禮",s3:"專業花藝設計工作坊",
+d1:"全方位婚禮花藝服務，包含新娘捧花、證婚花拱門及精緻晚宴桌花，完美實現您的夢想婚禮。",
+d2:"為高端客戶、VIP 送禮、商業開幕剪彩及企業訂閱花禮量身打造的手工精緻花藝。",
+d3:"由 DFA 認證專家親自授課的專業花藝設計精修班與生活美學手作工作坊。",
+rev_title:"客戶真實評價",
+r1:"Victoria 為我們設計的婚禮花藝美得令人窒息！拱門和捧花簡直完美無瑕！",
+r2:"為企業活動訂製的高端花禮非常驚豔，設計感十足且花期維持了好幾週。",
+r3:"參加 Victoria 的花藝課收穫豐碩！老師講解技巧非常細心且優雅。",
+r4:"她幫我們的精品店開幕做了精緻的佈置，非常有質感，強烈推薦！",
+r5:"真正的大師級美學，十年的深厚經驗在每一個細節中展露無遺。",
+ct_title:"聯絡 Victoria",ct_sub:"告訴我們您的花藝需求，或為即將到來的活動預約諮詢。",lbl_contact:"設計師",lbl_phone:"電話",lbl_area:"服務範圍",area:"大多倫多地區 (GTA) 及周邊地區",
+form_title:"預約花藝諮詢",f_name:"您的姓名",f_phone:"電話號碼",f_service:"所需服務",f_msg:"留言",f_submit:"送出申請",f_ok:"謝謝！Victoria 會盡快與您聯絡。",
+footer:"以奢華花藝自豪服務大多倫多地區"},
+fr:{call_now:"Appeler",msg_iphone:"Messages",panel_title:"Contactez Victoria",panel_sub:"Touchez un bouton pour appeler ou écrire à Victoria pour une consultation florale.",nav_about:"À propos",nav_services:"Services",nav_reviews:"Avis clients",nav_contact:"Contact",cta_quote:"Réserver",
+hero_badge:"10+ ans d'expérience · Designer florale certifiée DFA",hero_h1:"L'art floral d'exception pour sublimer vos moments",
+hero_sub:"Plus de 10 ans de passion au service de la RGT : décors de mariage de luxe, commandes haut de gamme, ouvertures d'entreprises et cours de design.",
+hero_tag:"Votre vision, magnifiée par les fleurs.",cta_free:"Demander un design",years:"ans d'art floral",
+about_title:"À propos de Victoria",about_p1:"Forte de plus d'une décennie d'expertise et d'une prestigieuse certification DFA, Victoria crée des installations florales à couper le souffle.",
+about_p2:"Spécialisée dans les arrangements sur mesure de luxe, les mariages haut de gamme, les ouvertures d'entreprises et les cours de maître.",
+about_lang:"Parle anglais, mandarin, cantonais et coréen",f1:"Certifiée DFA",f2:"Sur mesure haut de gamme",f3:"Mariages de luxe",f4:"Cours professionnels",
+svc_title:"Nos services floraux",svc_sub:"Des grands mariages aux ateliers de design floral, chaque création est unique.",
+s1:"Décorations de mariage de luxe",s2:"Commandes haut de gamme & Entreprises",s3:"Ateliers de design floral professionnel",
+d1:"Fleuristerie de mariage complète : bouquets de mariée, arches de cérémonie et centres de table somptueux.",
+d2:"Arrangements floraux pour clients exigeants, cadeaux VIP, ouvertures d'entreprises et abonnements floraux.",
+d3:"Ateliers pratiques de design floral professionnel et de loisirs animés par une experte certifiée DFA.",
+rev_title:"Ce que disent nos clients",
+r1:"Les fleurs de notre mariage par Victoria étaient absolument magiques et parfaites !",r2:"Arrangement haut de gamme commandé pour un événement d'entreprise : somptueux et durable.",r3:"Participer au cours de Victoria a été une vraie source d'inspiration !",r4:"Elle a décoré l'ouverture de notre boutique avec une élégance incroyable. Recommandé !",r5:"Une vraie maîtrise artistique. Dix ans d'expérience se voient dans chaque détail.",
+ct_title:"Contactez Victoria",ct_sub:"Partagez votre projet floral ou réservez une consultation.",lbl_contact:"Designer",lbl_phone:"Téléphone",lbl_area:"Zone de service",area:"Grand Toronto (RGT) et régions environnantes",
+form_title:"Demander une consultation",f_name:"Votre nom",f_phone:"Numéro de téléphone",f_service:"Service requis",f_msg:"Message",f_submit:"Envoyer",f_ok:"Merci ! Victoria vous contactera sous peu.",
+footer:"Fièrement au service de la RGT en design floral"},
+ko:{call_now:"전화하기",msg_iphone:"메시지 보내기",panel_title:"Victoria와 직접 상담하기",panel_sub:"버튼을 눌러 맞춤 플로럴 상담을 전화나 메시지로 예약하세요.",nav_about:"소개",nav_services:"서비스",nav_reviews:"고객 후기",nav_contact:"문의하기",cta_quote:"상담 예약",
+hero_badge:"경력 10년 이상 · DFA 인증 플로럴 디자이너",hero_h1:"당신의 특별한 순간을 위한 정교한 플로럴 아트",
+hero_sub:"10년 이상의 열정으로 광역 토론토(GTA) 지역에 럭셔리 웨딩 데코, 하이엔드 맞춤 및 기업 오픈 행사, 전문 플로럴 클래스를 제공합니다.",
+hero_tag:"꽃으로 피어나는 당신만의 아름다운 비전.",cta_free:"맞춤 디자인 요청",years:"년의 플로럴 경력",
+about_title:"Victoria를 소개합니다",about_p1:"10년 이상의 전문 플로럴 경력과 공신력 있는 DFA(Designer Florist Association) 자격을 갖춘 Victoria는 공간을 감동적인 예술 작품으로 재탄생시킵니다.",
+about_p2:"맞춤형 럭셔리 어레인지먼트, 하이엔드 웨딩, 기업 대형 오픈 행사, 소수정예 마스터클래스를 전문으로 하며, 모든 줄기마다 정교한 기술과 우아함을 담아냅니다.",
+about_lang:"영어, 만다린, 광동어 및 한국어 소통 가능",f1:"DFA 국제 인증",f2:"하이엔드 맞춤 디자인",f3:"럭셔리 웨딩 데코",f4:"전문 플로럴 클래스",
+svc_title:"플로럴 서비스",svc_sub:"성대한 웨딩 세레모니부터 전문 플로럴 클래스까지, 모든 작품은 독창적인 스타일로 제작됩니다.",
+s1:"럭셔리 웨딩 장식",s2:"하이엔드 맞춤 및 기업 주문 제작",s3:"전문 플로럴 디자인 워크숍",
+d1:"꿈꾸던 테마에 맞춘 부케, 아치, 리셉션 센터피스를 포함한 완벽한 웨딩 플로럴 서비스.",
+d2:"VIP 선물, 상업 공간 오픈 기념 및 기업 정기 구독을 위한 하이엔드 맞춤 꽃꽂이.",
+d3:"DFA 인증 전문가가 직접 지도하는 실무 중심의 전문 플로럴 디자인 클래스 및 취미 워크숍.",
+rev_title:"고객 후기",
+r1:"Victoria가 디자인한 웨딩 꽃장식은 정말 숨이 멎을 정도로 아름다웠어요. 아치와 부케 모두 완벽했습니다!",
+r2:"기업 행사를 위해 하이엔드 맞춤 어레인지먼트를 주문했는데 디자인이 너무 멋지고 몇 주 동안 싱싱했어요.",
+r3:"Victoria의 플로럴 클래스는 정말 큰 영감이 되었습니다! 기법을 너무나 쉽고 우아하게 설명해주셔요.",
+r4:"부티크 그랜드 오픈 행사를 정말 우아하게 꾸며주셨습니다. 강력 추천합니다!",
+r5:"진정한 아티스트의 솜씨입니다. 10년의 깊은 경력이 디테일 하나하나에서 느껴져요.",
+ct_title:"Victoria에게 문의하기",ct_sub:"원하시는 플로럴 비전을 공유해주시거나 다가올 행사를 위한 상담을 예약하세요.",lbl_contact:"디자이너",lbl_phone:"전화번호",lbl_area:"서비스 지역",area:"광역 토론토 (GTA) 및 인근 지역",
+form_title:"플로럴 상담 요청",f_name:"성함",f_phone:"연락처",f_service:"필요한 서비스",f_msg:"메시지",f_submit:"요청 전송",f_ok:"감사합니다! Victoria가 곧 연락드리겠습니다.",
+footer:"광역 토론토 지역을 대표하는 럭셔리 플로럴 디자인"}};
+
+const svc=[
+{i:"💐",g:"from-rose-400 to-stone-700",u:"images/image 5.jpg"},
+{i:"✨",g:"from-amber-400 to-rose-700",u:"images/image 2.png"},
+{i:"🌿",g:"from-stone-600 to-rose-800",u:"images/image 3.png"}
+];
+let lang="en";
+const $=s=>document.querySelector(s);
+
+$("#svcGrid").innerHTML=svc.map((s,n)=>`
+<article class="card bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-300 border border-stone-100">
+  <div class="relative h-48 overflow-hidden bg-gradient-to-br ${s.g} flex items-center justify-center">
+   <span class="ic text-6xl">${s.i}</span>
+   ${s.u && s.u !== "#"?`<img src="${s.u}" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">`:""}
+  </div>
+  <div class="p-6"><h3 class="font-bold text-lg text-stone-800" data-i18n="s${n+1}"></h3><p class="mt-2 text-stone-600 text-sm leading-relaxed" data-i18n="d${n+1}"></p></div>
+</article>`).join("");
+
+const names=["Emily R., Toronto","Jessica M., Markham","Sophia L., Vaughan","Chloe T., Richmond Hill","Amanda K., Mississauga"];
+const card=(n,i)=>`<div class="w-80 shrink-0 bg-stone-800 rounded-2xl p-6 border border-stone-700"><div class="text-amber-400 tracking-widest">★★★★★</div><p class="mt-3 text-stone-200 text-sm leading-relaxed" data-i18n="r${i+1}"></p><p class="mt-4 text-rose-300 text-sm font-semibold">— ${n}</p></div>`;
+$("#revTrack").innerHTML=names.map(card).join("")+names.map(card).join("");
+
+function setLang(l){
+  lang=l;document.documentElement.lang=l==="zh"?"zh-Hant":l==="ko"?"ko":l;
+  document.querySelectorAll("[data-i18n]").forEach(e=>{const v=T[l][e.dataset.i18n];if(v)e.textContent=v});
+  const sel=$("#svcSel");if(sel){const cur=sel.selectedIndex;sel.innerHTML=[1,2,3].map(n=>`<option>${T[l]["s"+n]}</option>`).join("");sel.selectedIndex=Math.max(cur,0)}
+  document.querySelectorAll(".lang").forEach(b=>b.classList.toggle("on",b.dataset.l===l));
+  try{localStorage.setItem("lang",l)}catch(e){}
+}
+document.querySelectorAll(".lang").forEach(b=>b.onclick=()=>setLang(b.dataset.l));
+
+$("#burger").onclick=()=>{const m=$("#mnav");m.classList.toggle("hidden");m.classList.toggle("flex")};
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{
+  const t=document.querySelector(a.getAttribute("href"));if(!t)return;
+  e.preventDefault();$("#mnav").classList.add("hidden");$("#mnav").classList.remove("flex");
+  t.scrollIntoView({behavior:"smooth",block:"start"});
+}));
+
+document.querySelectorAll(".ripple").forEach(b=>b.addEventListener("click",e=>{
+  const r=b.getBoundingClientRect(),d=Math.max(r.width,r.height),s=document.createElement("span");
+  s.className="r";s.style.cssText=`width:${d}px;height:${d}px;left:${e.clientX-r.left-d/2}px;top:${e.clientY-r.top-d/2}px`;
+  b.appendChild(s);setTimeout(()=>s.remove(),650);
+}));
+$("#heroBtn").addEventListener("click",()=>setTimeout(()=>$("#contact").scrollIntoView({behavior:"smooth"}),350));
+
+let saved="en";try{saved=localStorage.getItem("lang")||"en"}catch(e){}
+setLang(T[saved]?saved:"en");
+</script>
+</body>
+</html>
