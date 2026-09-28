@@ -11,17 +11,17 @@ body{font-family:'Inter','Noto Sans TC','Noto Sans KR',system-ui,sans-serif;colo
 html{scroll-behavior:smooth}
 section{scroll-margin-top:4rem}
 .ripple{position:relative;overflow:hidden}
-.ripple span.r{position:absolute;border-radius:50%;background:rgba(255,255,255,.55);transform:scale(0);animation:rp .65s ease-out;pointer-events:none}
+.ripple span.r{position:absolute;border-radius:50%;background:rgba(255,255,255,.65);transform:scale(0);animation:rp .65s ease-out;pointer-events:none}
 @keyframes rp{to{transform:scale(4);opacity:0}}
 .marquee{display:flex;width:max-content;animation:mq 45s linear infinite}
 .marquee:hover{animation-play-state:paused}
 @keyframes mq{to{transform:translateX(-50%)}}
-.lang.on{background:#be185d;color:#fff}
+.lang.on{background:#fbcfe8;color:#831843}
 .card:hover img,.card:hover .ic{transform:scale(1.08)}
 .card img,.card .ic{transition:transform .5s}
 </style>
 </head>
-<body class="bg-[#fcfbf9] antialiased">
+<body class="bg-[#fef9f9] antialiased">
 
 <!-- Header -->
 <header class="fixed top-0 inset-x-0 z-40 bg-white/90 backdrop-blur shadow-sm">
@@ -31,14 +31,14 @@ section{scroll-margin-top:4rem}
       <span class="text-sm sm:text-lg leading-tight tracking-wide">Victoria Floral Design</span>
     </a>
     <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-stone-600">
-      <a href="#about" data-i18n="nav_about" class="hover:text-pink-700"></a>
-      <a href="#services" data-i18n="nav_services" class="hover:text-pink-700"></a>
-      <a href="#reviews" data-i18n="nav_reviews" class="hover:text-pink-700"></a>
-      <a href="#contact" data-i18n="nav_contact" class="hover:text-pink-700"></a>
-      <a href="#contact" data-i18n="cta_quote" class="bg-rose-700 hover:bg-rose-800 text-white px-5 py-2 rounded-full shadow transition"></a>
+      <a href="#about" data-i18n="nav_about" class="hover:text-rose-500"></a>
+      <a href="#services" data-i18n="nav_services" class="hover:text-rose-500"></a>
+      <a href="#reviews" data-i18n="nav_reviews" class="hover:text-rose-500"></a>
+      <a href="#contact" data-i18n="nav_contact" class="hover:text-rose-500"></a>
+      <a href="#contact" data-i18n="cta_quote" class="bg-rose-200 hover:bg-rose-300 text-stone-800 px-5 py-2 rounded-full shadow-sm transition"></a>
     </nav>
     <div class="flex items-center gap-2">
-      <div class="flex rounded-full border border-stone-200 overflow-hidden text-xs font-semibold bg-white">
+      <div class="flex rounded-full border border-pink-200 overflow-hidden text-xs font-semibold bg-white">
         <button class="lang px-2 py-1.5" data-l="zh">繁中</button>
         <button class="lang px-2 py-1.5" data-l="en">EN</button>
         <button class="lang px-2 py-1.5" data-l="fr">FR</button>
@@ -47,27 +47,27 @@ section{scroll-margin-top:4rem}
       <button id="burger" aria-label="Menu" class="lg:hidden p-2 text-stone-700"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
     </div>
   </div>
-  <div id="mnav" class="hidden lg:hidden bg-white border-t px-4 py-3 flex-col gap-3 text-stone-700 font-medium">
+  <div id="mnav" class="hidden lg:hidden bg-white border-t border-pink-100 px-4 py-3 flex-col gap-3 text-stone-700 font-medium">
     <a href="#about" data-i18n="nav_about"></a>
     <a href="#services" data-i18n="nav_services"></a>
     <a href="#reviews" data-i18n="nav_reviews"></a>
     <a href="#contact" data-i18n="nav_contact"></a>
-    <a href="#contact" data-i18n="cta_quote" class="bg-rose-700 text-white text-center py-2.5 rounded-full"></a>
+    <a href="#contact" data-i18n="cta_quote" class="bg-rose-200 hover:bg-rose-300 text-stone-800 text-center py-2.5 rounded-full"></a>
   </div>
 </header>
 
 <!-- Hero -->
-<section id="home" class="relative min-h-screen flex items-center pt-16 text-white overflow-hidden bg-gradient-to-br from-stone-900 via-rose-950 to-stone-900">
-  <img src="images/image 7.jpg" alt="Luxury Floral Design" class="absolute inset-0 w-full h-full object-cover opacity-35" onerror="this.remove()">
-  <div class="absolute inset-0 bg-gradient-to-r from-stone-950/90 via-stone-950/50 to-transparent"></div>
+<section id="home" class="relative min-h-screen flex items-center pt-16 text-stone-800 overflow-hidden bg-gradient-to-br from-rose-100 via-pink-50 to-orange-50">
+  <img src="images/image 7.jpg" alt="Luxury Floral Design" class="absolute inset-0 w-full h-full object-cover opacity-25" onerror="this.remove()">
+  <div class="absolute inset-0 bg-gradient-to-r from-rose-50/90 via-pink-50/60 to-transparent"></div>
   <div class="relative max-w-7xl mx-auto px-4 py-20">
-    <span class="inline-block bg-rose-500/20 text-rose-200 border border-rose-300/30 px-4 py-1 rounded-full text-sm mb-6" data-i18n="hero_badge"></span>
-    <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight max-w-3xl" data-i18n="hero_h1"></h1>
-    <p class="mt-6 text-lg sm:text-xl text-stone-200 max-w-2xl" data-i18n="hero_sub"></p>
-    <p class="mt-4 text-rose-300 font-semibold text-lg" data-i18n="hero_tag"></p>
+    <span class="inline-block bg-rose-100 text-rose-800 border border-rose-200 px-4 py-1 rounded-full text-sm mb-6 shadow-sm" data-i18n="hero_badge"></span>
+    <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight max-w-3xl text-stone-900" data-i18n="hero_h1"></h1>
+    <p class="mt-6 text-lg sm:text-xl text-stone-600 max-w-2xl" data-i18n="hero_sub"></p>
+    <p class="mt-4 text-rose-600 font-semibold text-lg" data-i18n="hero_tag"></p>
     <div class="mt-10 flex flex-wrap gap-4">
-      <button id="heroBtn" class="ripple bg-rose-600 hover:bg-rose-500 text-white font-semibold px-8 py-4 rounded-full shadow-xl transition" data-i18n="cta_free"></button>
-      <a href="tel:+16472298965" class="border border-white/50 hover:bg-white/10 px-8 py-4 rounded-full font-semibold transition">📞 <span data-i18n="call_now"></span> 647-229-8965</a>
+      <button id="heroBtn" class="ripple bg-rose-300 hover:bg-rose-400 text-stone-800 font-semibold px-8 py-4 rounded-full shadow-md transition" data-i18n="cta_free"></button>
+      <a href="tel:+16472298965" class="border border-rose-300/80 bg-white/50 backdrop-blur hover:bg-rose-50 px-8 py-4 rounded-full font-semibold text-stone-800 transition">📞 <span data-i18n="call_now"></span> 647-229-8965</a>
     </div>
   </div>
 </section>
@@ -75,33 +75,33 @@ section{scroll-margin-top:4rem}
 <!-- About -->
 <section id="about" class="py-20 bg-white">
   <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-    <div class="relative h-80 md:h-[26rem] rounded-3xl overflow-hidden shadow-xl bg-gradient-to-br from-rose-200 to-stone-200 flex items-center justify-center text-8xl">
+    <div class="relative h-80 md:h-[26rem] rounded-3xl overflow-hidden shadow-lg bg-gradient-to-br from-rose-100 to-pink-50 flex items-center justify-center text-8xl">
       💐
       <img src="images/image 6.png" alt="Victoria Professional Florist" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
-      <div class="absolute bottom-4 left-4 bg-white/95 backdrop-blur rounded-2xl px-5 py-3 shadow-lg"><div class="text-3xl font-extrabold text-rose-700">10+</div><div class="text-xs text-stone-500" data-i18n="years"></div></div>
+      <div class="absolute bottom-4 left-4 bg-white/95 backdrop-blur rounded-2xl px-5 py-3 shadow-md border border-pink-100"><div class="text-3xl font-extrabold text-rose-600">10+</div><div class="text-xs text-stone-500" data-i18n="years"></div></div>
     </div>
     <div>
       <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-800" data-i18n="about_title"></h2>
-      <div class="w-16 h-1 bg-rose-400 mt-3 mb-6"></div>
+      <div class="w-16 h-1 bg-rose-300 mt-3 mb-6"></div>
       <p class="text-stone-600 leading-relaxed text-justify" data-i18n="about_p1"></p>
       <p class="mt-4 text-stone-600 leading-relaxed text-justify" data-i18n="about_p2"></p>
       <div class="mt-4 inline-block bg-rose-50 text-rose-800 font-semibold px-4 py-2 rounded-xl border border-rose-100" data-i18n="about_lang"></div>
       <ul class="mt-6 grid grid-cols-2 gap-3 text-sm font-medium">
-        <li class="bg-[#fcfbf9] rounded-xl p-3 shadow-sm border border-stone-100">🌿 <span data-i18n="f1"></span></li>
-        <li class="bg-[#fcfbf9] rounded-xl p-3 shadow-sm border border-stone-100">🎓 <span data-i18n="f2"></span></li>
-        <li class="bg-[#fcfbf9] rounded-xl p-3 shadow-sm border border-stone-100">✨ <span data-i18n="f3"></span></li>
-        <li class="bg-[#fcfbf9] rounded-xl p-3 shadow-sm border border-stone-100">🏡 <span data-i18n="f4"></span></li>
+        <li class="bg-[#fef9f9] rounded-xl p-3 shadow-sm border border-pink-100 text-stone-700">🌿 <span data-i18n="f1"></span></li>
+        <li class="bg-[#fef9f9] rounded-xl p-3 shadow-sm border border-pink-100 text-stone-700">🎓 <span data-i18n="f2"></span></li>
+        <li class="bg-[#fef9f9] rounded-xl p-3 shadow-sm border border-pink-100 text-stone-700">✨ <span data-i18n="f3"></span></li>
+        <li class="bg-[#fef9f9] rounded-xl p-3 shadow-sm border border-pink-100 text-stone-700">🏡 <span data-i18n="f4"></span></li>
       </ul>
     </div>
   </div>
 </section>
 
 <!-- Services -->
-<section id="services" class="py-20 bg-[#fcfbf9]">
+<section id="services" class="py-20 bg-pink-50/40">
   <div class="max-w-7xl mx-auto px-4">
     <div class="text-center max-w-2xl mx-auto">
       <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-800" data-i18n="svc_title"></h2>
-      <div class="w-16 h-1 bg-rose-400 mx-auto mt-3 mb-4"></div>
+      <div class="w-16 h-1 bg-rose-300 mx-auto mt-3 mb-4"></div>
       <p class="text-stone-600" data-i18n="svc_sub"></p>
     </div>
     <div id="svcGrid" class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-7"></div>
@@ -109,10 +109,10 @@ section{scroll-margin-top:4rem}
 </section>
 
 <!-- Reviews -->
-<section id="reviews" class="py-20 bg-stone-900 text-white overflow-hidden">
+<section id="reviews" class="py-20 bg-rose-100/50 text-stone-800 overflow-hidden">
   <div class="text-center px-4 mb-10">
-    <h2 class="text-3xl sm:text-4xl font-extrabold" data-i18n="rev_title"></h2>
-    <div class="text-amber-400 text-2xl mt-3 tracking-widest">★★★★★</div>
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900" data-i18n="rev_title"></h2>
+    <div class="text-amber-500 text-2xl mt-3 tracking-widest">★★★★★</div>
   </div>
   <div class="marquee gap-6 px-3" id="revTrack"></div>
 </section>
@@ -122,38 +122,38 @@ section{scroll-margin-top:4rem}
   <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-10">
     <div>
       <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-800" data-i18n="ct_title"></h2>
-      <div class="w-16 h-1 bg-rose-400 mt-3 mb-6"></div>
+      <div class="w-16 h-1 bg-rose-300 mt-3 mb-6"></div>
       <p class="text-stone-600 mb-8" data-i18n="ct_sub"></p>
       <div class="space-y-4">
-        <div class="flex items-center gap-4 bg-[#fcfbf9] rounded-2xl p-4 shadow-sm border border-stone-100"><span class="text-2xl">👩‍🎨</span><div><div class="text-xs text-stone-500" data-i18n="lbl_contact"></div><div class="font-semibold">Victoria</div></div></div>
-        <a href="tel:+16472298965" class="flex items-center gap-4 bg-rose-700 hover:bg-rose-800 text-white rounded-2xl p-4 shadow-md transition"><span class="text-2xl">📞</span><div><div class="text-xs text-rose-100" data-i18n="lbl_phone"></div><div class="font-bold text-lg"><span data-i18n="call_now"></span> 647-229-8965</div></div></a>
-        <div class="flex items-center gap-4 bg-[#fcfbf9] rounded-2xl p-4 shadow-sm border border-stone-100"><span class="text-2xl">📍</span><div><div class="text-xs text-stone-500" data-i18n="lbl_area"></div><div class="font-semibold" data-i18n="area"></div></div></div>
+        <div class="flex items-center gap-4 bg-[#fef9f9] rounded-2xl p-4 shadow-sm border border-pink-100"><span class="text-2xl">👩‍🎨</span><div><div class="text-xs text-stone-500" data-i18n="lbl_contact"></div><div class="font-semibold text-stone-800">Victoria</div></div></div>
+        <a href="tel:+16472298965" class="flex items-center gap-4 bg-rose-200 hover:bg-rose-300 text-stone-800 rounded-2xl p-4 shadow-sm transition"><span class="text-2xl">📞</span><div><div class="text-xs text-rose-800" data-i18n="lbl_phone"></div><div class="font-bold text-lg"><span data-i18n="call_now"></span> 647-229-8965</div></div></a>
+        <div class="flex items-center gap-4 bg-[#fef9f9] rounded-2xl p-4 shadow-sm border border-pink-100"><span class="text-2xl">📍</span><div><div class="text-xs text-stone-500" data-i18n="lbl_area"></div><div class="font-semibold text-stone-800" data-i18n="area"></div></div></div>
       </div>
     </div>
     <!-- contact panel -->
-    <div class="bg-[#fcfbf9] border border-stone-100 rounded-3xl shadow-xl p-6 sm:p-8 flex flex-col justify-center gap-4 text-center">
+    <div class="bg-[#fef9f9] border border-pink-100 rounded-3xl shadow-lg p-6 sm:p-8 flex flex-col justify-center gap-4 text-center">
       <h3 class="text-xl font-bold text-stone-800" data-i18n="panel_title"></h3>
       <p class="text-stone-600 text-sm" data-i18n="panel_sub"></p>
-      <a href="tel:+16472298965" class="ripple bg-rose-700 hover:bg-rose-800 text-white font-semibold py-4 rounded-xl transition">📞 <span data-i18n="call_now"></span> 647-229-8965</a>
-      <a href="sms:+16472298965" class="ripple bg-[#007AFF] hover:opacity-90 text-white font-semibold py-4 rounded-xl transition">💬 <span data-i18n="msg_iphone">Messages</span></a>
-      <a href="https://wa.me/16472298965" target="_blank" rel="noopener noreferrer" class="ripple bg-[#25D366] hover:opacity-90 text-white font-semibold py-4 rounded-xl transition flex items-center justify-center gap-2">WhatsApp</a>
+      <a href="tel:+16472298965" class="ripple bg-rose-300 hover:bg-rose-400 text-stone-800 font-semibold py-4 rounded-xl shadow-sm transition">📞 <span data-i18n="call_now"></span> 647-229-8965</a>
+      <a href="sms:+16472298965" class="ripple bg-sky-200 hover:bg-sky-300 text-stone-800 font-semibold py-4 rounded-xl shadow-sm transition">💬 <span data-i18n="msg_iphone">Messages</span></a>
+      <a href="https://wa.me/16472298965" target="_blank" rel="noopener noreferrer" class="ripple bg-emerald-200 hover:bg-emerald-300 text-stone-800 font-semibold py-4 rounded-xl shadow-sm transition flex items-center justify-center gap-2">WhatsApp</a>
     </div>
   </div>
 </section>
 
-<footer class="bg-stone-950 text-stone-400 text-center text-sm py-6 px-4">
+<footer class="bg-pink-100/60 text-stone-600 text-center text-sm py-6 px-4 border-t border-pink-200/50">
   © 2014 Victoria Floral Design · <span data-i18n="footer"></span>
 </footer>
 
 <!-- Floating bubbles -->
 <div class="fixed bottom-5 right-5 z-50 flex flex-col gap-3">
-  <a href="https://www.instagram.com/zecart.floral/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-14 h-14 rounded-full bg-gradient-to-tr from-amber-500 via-rose-600 to-purple-700 shadow-lg hover:scale-110 transition flex items-center justify-center text-white">
+  <a href="https://www.instagram.com/zecart.floral/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-14 h-14 rounded-full bg-gradient-to-tr from-amber-200 via-rose-300 to-purple-300 shadow-lg hover:scale-110 transition flex items-center justify-center text-stone-800">
     <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
   </a>
-  <a href="https://wa.me/16472298965" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-14 h-14 rounded-full bg-[#25D366] shadow-lg hover:scale-110 transition flex items-center justify-center text-white">
+  <a href="https://wa.me/16472298965" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-14 h-14 rounded-full bg-emerald-200 shadow-lg hover:scale-110 transition flex items-center justify-center text-stone-800">
     <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
   </a>
-  <a href="sms:+16472298965" aria-label="Messages" class="w-14 h-14 rounded-full bg-[#007AFF] shadow-lg hover:scale-110 transition flex items-center justify-center text-white">
+  <a href="sms:+16472298965" aria-label="Messages" class="w-14 h-14 rounded-full bg-sky-200 shadow-lg hover:scale-110 transition flex items-center justify-center text-stone-800">
     <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
   </a>
 </div>
@@ -238,15 +238,15 @@ form_title:"플로럴 상담 요청",f_name:"성함",f_phone:"연락처",f_servi
 footer:"광역 토론토 지역을 대표하는 럭셔리 플로럴 디자인"}};
 
 const svc=[
-{i:"💐",g:"from-rose-400 to-stone-700",u:"images/image 5.jpg"},
-{i:"✨",g:"from-amber-400 to-rose-700",u:"images/image 2.png"},
-{i:"🌿",g:"from-stone-600 to-rose-800",u:"images/image 3.png"}
+{i:"💐",g:"from-rose-200 to-pink-100",u:"images/image 5.jpg"},
+{i:"✨",g:"from-amber-100 to-rose-200",u:"images/image 2.png"},
+{i:"🌿",g:"from-pink-100 to-rose-200",u:"images/image 3.png"}
 ];
 let lang="en";
 const $=s=>document.querySelector(s);
 
 $("#svcGrid").innerHTML=svc.map((s,n)=>`
-<article class="card bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-300 border border-stone-100">
+<article class="card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300 border border-pink-100">
   <div class="relative h-48 overflow-hidden bg-gradient-to-br ${s.g} flex items-center justify-center">
    <span class="ic text-6xl">${s.i}</span>
    ${s.u && s.u !== "#"?`<img src="${s.u}" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">`:""}
@@ -255,7 +255,7 @@ $("#svcGrid").innerHTML=svc.map((s,n)=>`
 </article>`).join("");
 
 const names=["Emily R., Toronto","Jessica M., Markham","Sophia L., Vaughan","Chloe T., Richmond Hill","Amanda K., Mississauga"];
-const card=(n,i)=>`<div class="w-80 shrink-0 bg-stone-800 rounded-2xl p-6 border border-stone-700"><div class="text-amber-400 tracking-widest">★★★★★</div><p class="mt-3 text-stone-200 text-sm leading-relaxed" data-i18n="r${i+1}"></p><p class="mt-4 text-rose-300 text-sm font-semibold">— ${n}</p></div>`;
+const card=(n,i)=>`<div class="w-80 shrink-0 bg-white/90 backdrop-blur rounded-2xl p-6 border border-pink-100 shadow-sm"><div class="text-amber-500 tracking-widest">★★★★★</div><p class="mt-3 text-stone-600 text-sm leading-relaxed" data-i18n="r${i+1}"></p><p class="mt-4 text-rose-600 text-sm font-semibold">— ${n}</p></div>`;
 $("#revTrack").innerHTML=names.map(card).join("")+names.map(card).join("");
 
 function setLang(l){
